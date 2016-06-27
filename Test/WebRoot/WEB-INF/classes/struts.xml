@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+<package name="ftd.action"  extends="struts-default">	
+	
+	<action name="SerchCourseByTeacher" class="ftd.action.SerchCourseByTeacher">
+	<result name="SUCCESS">Course.jsp</result>
+	</action>
+	<action name="GetCodeAction" class="ftd.action.GetCodeAction">
+	 <result type="stream">       
+        <param name="contentType">image/jpeg</param>       
+        <param name="inputName">inputStream</param>       
+    </result>    
+	</action>
+	</package>
+</struts>    
